@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+#oshin
+{
+  text-align: center;
+  text-decoration: none;
+  color:black;
+}
+
+h1
+{
+  text-align: center;
+  text-decoration: none;
+  color:black;
+}
+
+h4
+{
+  padding:0px;
+  margin:0px;
+  padding-left: 12px;
+  padding-top: 30px;
+}
+
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.pictures
+{
+  padding-right: 15px;
+}
+
+.sosupersam
+{
+  max-width: 100%;
+  background-position: 50% 50%
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a{
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  border-width: thin;
+}
+
+.topnav button
+{
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  border-style:none;
+  background-color: white;
+  color: black;
+  padding: 14px 16px;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  padding-top:10px;
+  border-style:none;
+  color:black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+
+.topnav a:hover {
+  color: black;
+}
+
+.active {
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+}
+
+hr
+{
+  border-width: 0.5px;
+  border-color:black;
+}
+
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  padding-left: 8px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.dropdown-btn
+{
+  border-style:solid;
+  border-width: thin;
+  color: black;
+  display: block;
+  transition: 0.4s;
+}
+
+.dropdown-btn:after {
+  padding-left: 10px;
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+}
+
+div.emailButton > a > img, .instagramButton > a > img, .facebookButton >a >img
+{
+  float:left;
+  padding-left: 10px;
+  height:30px;
+  width: 30px;
+}
+
+.allButtons
+{
+  padding-top: 15px;
+}
+
+.rights
+{
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+  padding-left: 11px;
+}
+
+#mobilesam
+{
+  color:#efb5ae;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<h1><a id="oshin" href="../index.html">Oshin Tudayan</h1></a>
+
+<div class="topnav">
+  <a href="#home" class="active" onclick="myFunction()">Logo</a>
+  <div id="myLinks">
+
+    <button class="dropdown-btn">Graduation 2018
+
+    </button>
+    <div class="dropdown-container">
+      <a href="#" class="buttonLinks">UC Irvine</a>
+      <a href="#" class="buttonLinks">UCLA</a>
+      <a href="#" class="buttonLinks">Cal State Long Beach</a>
+      <a href="mobilegroup.html" class="buttonLinks">Group</a>
+      <a href="#" class="buttonLinks">Couples</a>
+    </div>
+
+    <button class="dropdown-btn">Portraitures
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Aida</a>
+      <a href="#">Ali</a>
+      <a href="#">Gerryko / Gabby</a>
+      <a href="#">Larz</a>
+      <a href="#">Maia</a>
+      <a href="#">Miran</a>
+    </div>
+
+    <a id="mobilesam" href="mobilesam.html">SOSUPERSAM - Roxy Theater L.A.</a>
+
+    <button class="dropdown-btn">ESports
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Overwatch League Preseason</a>
+      <a href="#">Overwatch League Stage 1 Finals</a>
+    </div>
+
+    <button class="dropdown-btn">Graduation 2017
+    </button>
+    <div class="dropdown-container">
+      <a href="#">UC Irvine</a>
+    </div>
+
+    <a href="mobileabout.html">About</a>
+    <a href="#contact">Contact</a>
+
+  </div>
+
+  <hr size=2>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>SOSUPERSAM - Roxy Theater L.A.</h3>
+  
+  <div class="pictures">
+  <img src="../media/s3.jpg" class="sosupersam"/>
+  <img src="../media/s2.jpg" class="sosupersam"/>
+  <img src="../media/s1.jpg" class="sosupersam"/>
+  <img src="../media/s4.jpg" class="sosupersam"/>
+  <img src="../media/s5.jpg" class="sosupersam"/>
+  <img src="../media/s6.jpg" class="sosupersam"/>
+  <img src="../media/s8.jpg" class="sosupersam"/>
+  <img src="../media/s9.jpg" class="sosupersam"/>
+  <img src="../media/s10.jpg" class="sosupersam"/>
+  </div>
+
+</div>
+
+<h4>Social Media</h4>
+<div class="allButtons">
+<div class="facebookButton">
+  <a href="https://www.facebook.com/OC34N?ref=br_rs"><img src="../media/facebookbutton.png"/>
+  </a>
+</div>
+
+<div class="instagramButton">
+  <a href="https://www.instagram.com/ohoshin/"><img src="../media/instagram.png"/>
+  </a>
+</div>
+
+<div class="emailButton">
+  <a href="mailto:filipinoballers@gmail.com"><img src="../media/email.png"/>
+  </a>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<p class="rights">© All Rights Reserved — Oshin T.</p>
+<br>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
+
+<script type="text/javascript">
+  //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var acc = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+</script>
+
+</body>
+</html>

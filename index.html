@@ -1,0 +1,310 @@
+<DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml1-transitional.dtd">
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+	<title>Oshin Tudayan Photography</title>
+	<style type="text/css">
+	/*---------------------------------------------------------*/
+	/* The main picture scrollbar */
+
+	body
+	{
+		font-family: "Comic Sans MS", cursive, sans-serif;
+	}
+
+	a:active, a:focus {
+	  outline: 0;
+	  border: none;
+	  -moz-outline-style: none;
+	}
+
+	h4
+	{
+		font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+		padding-left: 10px;
+	}
+
+	#group
+	{
+		color:#efb5ae
+	}
+
+	.rights
+	{
+		font-size: 15px;
+		font-family: "Times New Roman", Times, serif;
+		padding-left: 15.5%
+	}
+
+	div.emailButton > a > img, .instagramButton > a > img, .facebookButton >a >img
+	{
+		float:left;
+		padding-left: 10px;
+		height:30px;
+		width: 30px;
+	}
+
+	/*---------------------------------------------------------*/
+	/* The main picture scrollbar */
+	div.scrollmenu
+	{
+	    background-color: white;
+	    overflow: auto;
+	    white-space: nowrap;
+	}
+
+	div.scrollmenu img 
+	{
+	    max-height: 500px;
+	    padding-left: 15px;
+	    background-position: 50% 50%
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+	div.scrollmenu a:hover 
+	{
+	    color:#efb5ae
+	}
+
+	/*---------------------------------------------------------*/
+	/* The sidebar menu */
+	/* Fixed sidenav, full height */
+	.sidenav {
+	  height: 100%;
+	  width: 200px;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: white;
+	  overflow-x: hidden;
+	}
+
+	/* Style the sidenav links and the dropdown button */
+	.sidenav a, .dropdown-btn {
+	  opacity:0.8;
+	  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	  padding: 0px 8px 6px 16px;
+	  text-decoration: none;
+	  font-size: 12px;
+	  color: black;
+	  display: block;
+	  border: none;
+	  background: none;
+	  width:100%;
+	  padding-left:15%;
+	  text-align: left;
+	  cursor: pointer;
+	  outline: none;
+	  transition: 0.4s;
+	}
+
+	.sidenav > h1
+	{
+		opacity: 0.8;
+		font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+		text-align: left;
+		padding-left: 15%;
+	}
+
+	.sidenav >button
+	{
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	}
+
+	/* On mouse-over */
+	.sidenav a:hover, .dropdown-btn:hover {
+	  color:#efb5ae
+	}
+
+
+	/* Main content */
+
+	/* Add an active class to the active dropdown button */
+	.active {
+	  /*color: red;*/
+	}
+
+	/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+	.dropdown-container {
+	  padding-left: 8px;
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.2s ease-out;
+	}
+
+	/* Optional: Style the caret down icon */
+	.fa-caret-down {
+	  float: right;
+	  padding-right: 8px;
+	}
+
+	.dropdown-btn:after {
+	    content: '\02795'; /* Unicode character for "plus" sign (+) */
+	    font-size: 8px;
+	}
+
+	.active:after {
+	    content: "\2796"; /* Unicode character for "minus" sign (-) */
+	}
+
+	/* Style page content */
+	.main > h1
+	{
+		font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+		padding-left: 10px;
+	}
+	.main {
+	    margin-left: 15%; /* Same as the width of the sidebar */
+	    padding: 0px 10px;
+	}
+
+	.sidenav > #oshin
+	{
+		font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+		font-size: 16px;
+	}
+
+	.sidenav > #oshin:hover
+	{
+		color:#efb5ae
+	}
+	/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+	@media screen and (max-height: 450px) {
+	    .sidenav {padding-top: 15px;}
+	    .sidenav a {font-size: 18px;}
+	}
+
+
+	</style>
+</head>
+
+<body>
+
+<!----------------HTML AND JAVASCRIPT----------------------->
+
+	<!-- REDIRECTING USERS IF ON MOBILE TO DESIG MOBILE PAGE -->
+	<script type="text/javascript">
+	<!--
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))
+		{
+		    window.location.replace("mobilePage/mobilegroup.html");
+		}
+	//-->
+	</script>
+
+
+	<!-- SIDE NAV-BAR HANDLER -->
+
+	  <div class="sidenav">
+
+	  	<a id="oshin" href="index.html"><h1>Oshin<br>Tudayan</h1></a>
+
+	    <button class="dropdown-btn">Graduation 2018
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-container">
+	      <a href="#">UC Irvine</a>
+	      <a href="#">UCLA</a>
+	      <a href="#">Cal State Long Beach</a>
+	      <a id="group" href="desktopPage/groupPage.html">Group</a>
+	      <a href="#">Couples</a>
+	    </div>
+
+	    <button class="dropdown-btn">Portraitures
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-container">
+	      <a href="#">Aida</a>
+	      <a href="#">Ali</a>
+	      <a href="#">Gerryko / Gabby</a>
+	      <a href="#">Larz</a>
+	      <a href="#">Maia</a>
+	      <a href="#">Miran</a>
+	    </div>
+
+	  	<a id="sosupersam" href="desktopPage/sosupersam.html">SOSUPERSAM - Roxy <br> Theater L.A.</a>
+
+	    <button class="dropdown-btn">ESports
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-container">
+	      <a href="#">Overwatch League<br>Preseason</a>
+	      <a href="#">Overwatch League<br>Stage 1 Finals</a>
+	    </div>
+
+	    <button class="dropdown-btn">Graduation 2017
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-container">
+	      <a href="#">UC Irvine</a>
+	    </div>
+
+	    <a href="desktopPage/about.html">About</a>
+	    <a href="#contact">Contact</a>
+	  </div>
+
+	<!-- Main Page content -->
+	<div class="main">
+		<h1>Group Graduation Sessions</h1>
+
+		<div class="scrollmenu">
+			<img src="media/g1.jpg"/>
+			<img src="media/g2.jpg"/>
+			<img src="media/g3.jpg"/>
+			<img src="media/g4.jpg"/>
+			<img src="media/g5.jpg"/>
+			<img src="media/g6.jpg"/>
+			<img src="media/g7.jpg"/>
+		</div>
+
+	<!-- Social Media Buttons -->
+		<h4>Social Media</h4>
+
+		<div class="facebookButton">
+			<a href="https://www.facebook.com/OC34N?ref=br_rs"><img src="media/facebookbutton.png"/>
+			</a>
+		</div>
+
+		<div class="instagramButton">
+			<a href="https://www.instagram.com/ohoshin/"><img src="media/instagram.png"/>
+			</a>
+		</div>
+		
+		<div class="emailButton">
+			<a href="mailto:filipinoballers@gmail.com"><img src="media/email.png"/>
+			</a>
+		</div>
+
+
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<p class="rights">© All Rights Reserved — Oshin T.</p>
+
+	<script type="text/javascript">
+		//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var acc = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.maxHeight){
+		      panel.style.maxHeight = null;
+		    } else {
+		      panel.style.maxHeight = panel.scrollHeight + "px";
+		    } 
+		  });
+		}
+	</script>
+
+</body>
+</html>
