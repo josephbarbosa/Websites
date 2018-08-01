@@ -1,0 +1,85 @@
+<div class="topnav">
+  <a href="#home" class="active" onclick="myFunction()">Menu</a>
+  <div id="myLinks">
+
+    <button class="dropdown-btn">Graduation 2018
+
+    </button>
+    <div class="dropdown-container">
+      <a id="mobileuci2018" href="mobileuci2018.html" class="buttonLinks">UC Irvine</a>
+      <a id="ucla" href="mobileucla.html" class="buttonLinks">UCLA</a>
+      <a id="lb" href="mobilelb.html" class="buttonLinks">Cal State Long Beach</a>
+      <a href="mobilegroup.html" id="group" class="buttonLinks">Group</a>
+      <a id="tc" href="mobiletaylorcalvin.html" class="buttonLinks">Couples</a>
+    </div>
+
+    <button class="dropdown-btn">Portraitures
+    </button>
+    <div class="dropdown-container">
+      <a id="aida" href="mobileaida.html">Aida</a>
+      <a id="gj" href="mobilegj.html">Gerryko & Gabby</a>
+      <a id="gyasi" href="mobilegyasi.html">Gyasi</a>
+      <a id="hanna" href="mobilehanna.html">Hanna</a>
+      <a id="larz" href="mobilelarz.html">Larz</a>
+      <a id="maia" href="mobilemaia.html">Maia</a>
+      <a id="miran" href="mobilemiran.html">Miran</a>
+    </div>
+
+    <a id="melissa" href="mobilemelissa.html">Melissa - La Sintura</a>
+
+    <a id="mobilesam" href="mobilesam.html">SOSUPERSAM - Roxy Theater L.A.</a>
+
+    <button class="dropdown-btn">ESports
+    </button>
+    <div class="dropdown-container">
+      <a id="ul" href="mobileucileague.html">League of Legends - UCI</a>
+      <a id="finals" href="mobilefinals.html">Overwatch League Stage 1 Finals</a>
+    </div>
+
+    <button class="dropdown-btn">Graduation 2017
+    </button>
+    <div class="dropdown-container">
+      <a id="mobileuci2017tag" href="mobileuci2017.html">UC Irvine</a>
+    </div>
+
+    <a id="about" href="mobileabout.html">About</a>
+    <a id="contact" href="mobilecontact.html">Contact</a>
+
+  </div>
+
+  <hr size=2>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <script>
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
+
+<script type="text/javascript">
+  //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var acc = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+</script>
+
+</div>

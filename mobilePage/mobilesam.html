@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Sam - Oshin Tudayan Photography</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -159,9 +160,9 @@ div.emailButton > a > img, .instagramButton > a > img, .facebookButton >a >img
 }
 
 
-
 </style>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body>
 
 <!-- Simulate a smartphone / tablet -->
@@ -170,58 +171,14 @@ div.emailButton > a > img, .instagramButton > a > img, .facebookButton >a >img
 <!-- Top Navigation Menu -->
 <h1><a id="oshin" href="../index.html">Oshin Tudayan</h1></a>
 
-<div class="topnav">
-  <a href="#home" class="active" onclick="myFunction()">Logo</a>
-  <div id="myLinks">
-
-    <button class="dropdown-btn">Graduation 2018
-
-    </button>
-    <div class="dropdown-container">
-      <a href="#" class="buttonLinks">UC Irvine</a>
-      <a href="#" class="buttonLinks">UCLA</a>
-      <a href="#" class="buttonLinks">Cal State Long Beach</a>
-      <a href="mobilegroup.html" class="buttonLinks">Group</a>
-      <a href="#" class="buttonLinks">Couples</a>
-    </div>
-
-    <button class="dropdown-btn">Portraitures
-    </button>
-    <div class="dropdown-container">
-      <a href="#">Aida</a>
-      <a href="#">Ali</a>
-      <a href="#">Gerryko / Gabby</a>
-      <a href="#">Larz</a>
-      <a href="#">Maia</a>
-      <a href="#">Miran</a>
-    </div>
-
-    <a id="mobilesam" href="mobilesam.html">SOSUPERSAM - Roxy Theater L.A.</a>
-
-    <button class="dropdown-btn">ESports
-    </button>
-    <div class="dropdown-container">
-      <a href="#">Overwatch League Preseason</a>
-      <a href="#">Overwatch League Stage 1 Finals</a>
-    </div>
-
-    <button class="dropdown-btn">Graduation 2017
-    </button>
-    <div class="dropdown-container">
-      <a href="#">UC Irvine</a>
-    </div>
-
-    <a href="mobileabout.html">About</a>
-    <a href="#contact">Contact</a>
-
-  </div>
-
-  <hr size=2>
-
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+<div id="include"></div>
+    <script>
+        window.onload = function(){
+            $.get("navbar.html", function(data){
+                $("#include").html(data);
+            })
+        }
+    </script>
 
 <div style="padding-left:16px">
   <h3>SOSUPERSAM - Roxy Theater L.A.</h3>
@@ -253,7 +210,7 @@ div.emailButton > a > img, .instagramButton > a > img, .facebookButton >a >img
 </div>
 
 <div class="emailButton">
-  <a href="mailto:filipinoballers@gmail.com"><img src="../media/email.png"/>
+  <a href="mailto:Tudayano@gmail.com"><img src="../media/email.png"/>
   </a>
 </div>
 </div>
@@ -261,40 +218,11 @@ div.emailButton > a > img, .instagramButton > a > img, .facebookButton >a >img
 <br>
 <br>
 <br>
-<p class="rights">© All Rights Reserved — Oshin T.</p>
+<p class="rights">&copy; All Rights Reserved - Joseph Barbosa and Oshin T.</p>
 <br>
 
 <!-- End smartphone / tablet look -->
 </div>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}
-</script>
-
-<script type="text/javascript">
-  //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-  var acc = document.getElementsByClassName("dropdown-btn");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight){
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      } 
-    });
-  }
-</script>
 
 </body>
 </html>

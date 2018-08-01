@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Larz - Oshin Tudayan Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+#oshin
+{
+  text-align: center;
+  text-decoration: none;
+  color:black;
+}
+
+h1
+{
+  text-align: center;
+  text-decoration: none;
+  color:black;
+}
+
+h4
+{
+  padding:0px;
+  margin:0px;
+  padding-left: 12px;
+  padding-top: 30px;
+}
+
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.pictures
+{
+  padding-right: 15px;
+}
+
+.groupphotos
+{
+  max-width: 100%;
+  background-position: 50% 50%
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a{
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  border-width: thin;
+}
+
+.topnav button
+{
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  border-style:none;
+  background-color: white;
+  color: black;
+  padding: 14px 16px;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  padding-top:10px;
+  border-style:none;
+  color:black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+
+.topnav a:hover {
+  color: black;
+}
+
+.active {
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+}
+
+hr
+{
+  border-width: 0.5px;
+  border-color:black;
+}
+
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  padding-left: 8px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.dropdown-btn
+{
+  border-style:solid;
+  border-width: thin;
+  color: black;
+  display: block;
+  transition: 0.4s;
+}
+
+.dropdown-btn:after {
+  padding-left: 10px;
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+}
+
+div.emailButton > a > img, .instagramButton > a > img, .facebookButton >a >img
+{
+  float:left;
+  padding-left: 10px;
+  height:30px;
+  width: 30px;
+}
+
+.allButtons
+{
+  padding-top: 15px;
+}
+
+.rights
+{
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+  padding-left: 11px;
+}
+
+#larz
+{
+  color:#efb5ae;
+}
+
+
+
+</style>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<h1><a id="oshin" href="../index.html">Oshin Tudayan</h1></a>
+
+<div id="include"></div>
+    <script>
+        window.onload = function(){
+            $.get("navbar.html", function(data){
+                $("#include").html(data);
+            })
+        }
+    </script>
+
+<div style="padding-left:16px">
+  <h3>Larz</h3>
+  
+  <div class="pictures">
+    <img src="../media/l1.jpg" class="groupphotos"/>
+    <img src="../media/l2.jpg" class="groupphotos"/>
+    <img src="../media/l3.jpg" class="groupphotos"/>
+    <img src="../media/l4.jpg" class="groupphotos"/>
+    <img src="../media/l5.jpg" class="groupphotos"/>
+    <img src="../media/l6.jpg" class="groupphotos"/>
+    <img src="../media/l7.jpg" class="groupphotos"/>
+  </div>
+
+</div>
+
+<h4>Social Media</h4>
+<div class="allButtons">
+<div class="facebookButton">
+  <a href="https://www.facebook.com/OC34N?ref=br_rs"><img src="../media/facebookbutton.png"/>
+  </a>
+</div>
+
+<div class="instagramButton">
+  <a href="https://www.instagram.com/ohoshin/"><img src="../media/instagram.png"/>
+  </a>
+</div>
+
+<div class="emailButton">
+  <a href="mailto:Tudayano@gmail.com"><img src="../media/email.png"/>
+  </a>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<p class="rights">&copy; All Rights Reserved - Joseph Barbosa and Oshin T.</p>
+<br>
+
+<!-- End smartphone / tablet look -->
+</div>
+</body>
+</html>

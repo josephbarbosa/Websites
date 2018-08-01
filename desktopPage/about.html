@@ -27,11 +27,6 @@
 		padding-left: 10px;
 	}
 
-	#group
-	{
-		color:#efb5ae
-	}
-
 	.rights
 	{
 		font-size: 15px;
@@ -214,6 +209,8 @@
 	</style>
 </head>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <body>
 
 <!----------------HTML AND JAVASCRIPT----------------------->
@@ -231,54 +228,14 @@
 
 	<!-- SIDE NAV-BAR HANDLER -->
 
-	  <div class="sidenav">
-
-	  	<a id="oshin" href="../index.html"><h1>Oshin<br>Tudayan</h1></a>
-
-	    <button class="dropdown-btn">Graduation 2018
-	      <i class="fa fa-caret-down"></i>
-	    </button>
-	    <div class="dropdown-container">
-	      <a href="#">UC Irvine</a>
-	      <a href="#">UCLA</a>
-	      <a href="#">Cal State Long Beach</a>
-	      <a id="group" href="groupPage.html">Group</a>
-	      <a href="#">Couples</a>
-	    </div>
-
-	    <button class="dropdown-btn">Portraitures
-	      <i class="fa fa-caret-down"></i>
-	    </button>
-	    <div class="dropdown-container">
-	      <a href="#">Aida</a>
-	      <a href="#">Ali</a>
-	      <a href="#">Gerryko / Gabby</a>
-	      <a href="#">Larz</a>
-	      <a href="#">Maia</a>
-	      <a href="#">Miran</a>
-	    </div>
-
-	  	<a id="sosupersam" href="sosupersam.html">SOSUPERSAM - Roxy <br> Theater L.A.</a>
-
-	    <button class="dropdown-btn">ESports
-	      <i class="fa fa-caret-down"></i>
-	    </button>
-	    <div class="dropdown-container">
-	      <a href="#">Overwatch League<br>Preseason</a>
-	      <a href="#">Overwatch League<br>Stage 1 Finals</a>
-	    </div>
-
-	    <button class="dropdown-btn">Graduation 2017
-	      <i class="fa fa-caret-down"></i>
-	    </button>
-	    <div class="dropdown-container">
-	      <a href="#">UC Irvine</a>
-	    </div>
-
-	    <a id="aboutid" href="about.html">About</a>
-
-	    <a href="#contact">Contact</a>
-	  </div>
+	<div id="include"></div>
+	    <script>
+	        window.onload = function(){
+	            $.get("sidenav.html", function(data){
+	                $("#include").html(data);
+	            })
+	        }
+	    </script>
 
 	<!-- Main Page content -->
 	<div class="main">
@@ -306,7 +263,7 @@
 		<h4>Social Media</h4>
 
 		<div class="facebookButton">
-			<a href="https://www.facebook.com/OC34N?ref=br_rs"><img src="../media/facebookbutton.png"/>
+			<a href="https://www.facebook.com/OC34N"><img src="../media/facebookbutton.png"/>
 			</a>
 		</div>
 
@@ -316,7 +273,7 @@
 		</div>
 		
 		<div class="emailButton">
-			<a href="mailto:filipinoballers@gmail.com"><img src="../media/email.png"/>
+			<a href="mailto:Tudayano@gmail.com"><img src="../media/email.png"/>
 			</a>
 		</div>
 
@@ -326,25 +283,7 @@
 	<br>
 	<br>
 	<br>
-	<p class="rights">© All Rights Reserved — Oshin T.</p>
-
-	<script type="text/javascript">
-		//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-		var acc = document.getElementsByClassName("dropdown-btn");
-		var i;
-
-		for (i = 0; i < acc.length; i++) {
-		  acc[i].addEventListener("click", function() {
-		    this.classList.toggle("active");
-		    var panel = this.nextElementSibling;
-		    if (panel.style.maxHeight){
-		      panel.style.maxHeight = null;
-		    } else {
-		      panel.style.maxHeight = panel.scrollHeight + "px";
-		    } 
-		  });
-		}
-	</script>
+	<p class="rights">&copy; All Rights Reserved - Joseph Barbosa and Oshin T.</p>
 
 </body>
 </html>
