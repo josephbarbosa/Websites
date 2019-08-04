@@ -88,6 +88,18 @@
 	  outline: none;
 	  transition: 0.4s;
 	}
+	
+	/* On screens that are less than 700px wide, make the sidebar into a topbar */
+    @media screen and (max-width: 700px) 
+    {
+      .sidenav
+      {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      
+    }
 
 	.sidenav > h1
 	{

@@ -1,6 +1,7 @@
 <?php
 if(isset($_POST['email'])) {
     $email_to = "to@domain.com";
+    $email_final = "oshintudayan@oshint.com";
     $first_name = $_POST['first_name']; // required
     $email_from = $_POST['email']; // required
     $telephone = $_POST['telephone']; // not required
@@ -20,8 +21,8 @@ if(isset($_POST['email'])) {
     $email_message .= "\nMessage:\n".clean_string($address)."\n";
 
 // create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
+$headers = 'From: '.$email_final."\r\n".
+'Reply-To: '.$email_final."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 mail('oshintudayan@oshint.com', $email_subject, $email_message, $headers);
 ?>

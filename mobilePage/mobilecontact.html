@@ -151,7 +151,7 @@ div.emailButton > a > img, .instagramButton > a > img, .facebookButton >a >img
 
 .allButtons
 {
-  padding-left: 10%;
+  padding-left: 16%;
   padding-top: 15px;
 }
 
@@ -209,6 +209,7 @@ h3
 }
 #message
 {
+
   height: 100px;
   width: 300px;
 }
@@ -224,6 +225,18 @@ h3
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body>
+    
+    <script type="text/javascript">
+	<!--
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))
+		{
+		}
+		else
+		{
+		    window.location.replace("../desktopPage/contact.html");
+		}
+	//-->
+	</script>
 
 <!-- Simulate a smartphone / tablet -->
 <div class="mobile-container">
@@ -264,10 +277,15 @@ h3
   <div class="aboutmepdiv"><p class="aboutmep">
     <br><br>
     For any business inquiries or collaborations, please send me an email or fill out the form below! Let's create!
+		<br>
+		<br>
+		FOR 2019 GRAD SHOOT REQUESTS MAKE SURE TO ADD: <br><br>
+
+        1. What school you're from <br>
+        2. What package option you're wanting to book <br>
+        3. What your possible session dates WITH times <br>
         <br>
-        <br>
-        Email:
-        <a href="mailto:Tudayano@gmail.com" style="text-decoration: none">Tudayano@gmail.com</a>
+        Let's create! - Oshin T
 
           <form class="submit-student-form" action="student_form.php" method="post">
             <label>Name</label><br>
@@ -279,7 +297,8 @@ h3
             <br><br><label>Subject</label><br>
             <input id="subject" type="text" name="location" placeholder="Subject" required>
             <br><br><label">Message</label><br>
-            <input id="message" type="text" name="address" placeholder="Type your message here" required>
+            <textarea id="message" type="text" cols="40" rows="5" name="address" placeholder="Type your message here" required></textarea>
+
             <br><br><button id="submitButton" type="submit">Submit</button>
           </form>
           <br>

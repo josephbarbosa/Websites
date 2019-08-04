@@ -1,0 +1,87 @@
+<DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml1-transitional.dtd">
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+	<title>Oshin Tudayan Photography</title>
+	<link rel="stylesheet" type="text/css" href="../CSSFiles/desktopStyle.css"/>
+	<style type="text/css">
+		#aliana
+		{
+			color:#efb5ae
+		}
+	</style>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body>
+
+<!----------------HTML AND JAVASCRIPT----------------------->
+
+	<!-- REDIRECTING USERS IF ON MOBILE TO DESIG MOBILE PAGE -->
+	<script type="text/javascript">
+	<!--
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))
+		{
+		    window.location.replace("../mobilePage/mobilealiana.html");
+		}
+	//-->
+	</script>
+
+
+	<!-- SIDE NAV-BAR HANDLER -->
+
+	<div id="include"></div>
+	    <script>
+	        window.onload = function(){
+	            $.get("sidenav.html", function(data){
+	                $("#include").html(data);
+	            })
+	        }
+	    </script>
+
+	<!-- Main Page content -->
+	<div class="main">
+		<h1>Aliana</h1>
+
+		<div class="scrollmenu">
+			<img src="../media/alia1.jpg"/>
+			<img src="../media/alia2.jpg"/>
+			<img src="../media/alia3.jpg"/>
+			<img src="../media/alia4.jpg"/>
+			<img src="../media/alia5.jpg"/>
+			<img src="../media/alia6.jpg"/>
+			<img src="../media/alia7.jpg"/>
+		</div>
+
+	<!-- Social Media Buttons -->
+		<h4>Social Media</h4>
+
+		<div class="facebookButton">
+			<a href="https://www.facebook.com/OC34N?ref=br_rs"><img src="../media/facebookbutton.png"/>
+			</a>
+		</div>
+
+		<div class="instagramButton">
+			<a href="https://www.instagram.com/ohoshin/"><img src="../media/instagram.png"/>
+			</a>
+		</div>
+		
+		<div class="emailButton">
+			<a href="mailto:Tudayano@gmail.com"><img src="../media/email.png"/>
+			</a>
+		</div>
+
+
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<p class="rights">&copy; All Rights Reserved - Joseph Barbosa and Oshin T.</p>
+
+</body>
+</html>

@@ -79,7 +79,7 @@
 	<!--
 		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))
 		{
-		    window.location.replace("mobilePage/mobilePage.html");
+		    window.location.replace("../mobilePage/mobilePage.html");
 		}
 	//-->
 	</script>
@@ -118,7 +118,7 @@
 			  <br><br><label>Subject</label><br>
 			  <input type="text" name="location" placeholder="Subject" required>
 			  <br><br><label">Message</label><br>
-			  <input id="message" type="text" name="address" placeholder="Type your message here" required>
+			  <textarea id="message" type="text" cols="40" rows="5" name="address" placeholder="Type your message here" required></textarea>
 			  <br><br><button type="submit">Submit</button>
 			</form>
 		</p></div>
